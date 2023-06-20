@@ -20,8 +20,6 @@ pip install stellar-sdk
 
 ### Full example
 ```python
-# Sample Usage
-
 # Replace "your_account_address" with the actual Stellar wallet address
 account_address = "your_account_address"
 
