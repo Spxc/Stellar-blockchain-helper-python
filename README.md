@@ -16,10 +16,34 @@ pip install stellar-sdk
 <br>
 
 
+## Sample Usage
+
+### Full example
+```python
+# Sample Usage
+
+# Replace "your_account_address" with the actual Stellar wallet address
+account_address = "your_account_address"
+
+# Load account pools
+pools = load_account_pools(account_address)
+if pools:
+    for pool in pools:
+        # Load pool details for each pool
+        pool_details = load_pool_details(pool)
+        if pool_details:
+            print("Pool Details:")
+            print(pool_details)
+            print()
+else:
+    print("No liquidity pools found for the account.")
+```
+
+<br>
+
 ## Usage
 
 ### Load Account Pools
-
 ```python
 from stellar_sdk import Server
 
